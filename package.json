@@ -1,0 +1,14 @@
+{
+  "name": "code-tray",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/joaovieira23/electron-tray.git",
+  "author": "joaovieira23 <joaovictorvieira.23@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^8.2.5"
+  }
+}

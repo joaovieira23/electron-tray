@@ -1,0 +1,33 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add electron
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\joaov\Downloads\Android\Sdk\platform-tools;C:\Users\joaov\Downloads\Android\Sdk\tools;C:\Program Files\Java\jdk1.8.0_211\bin;D:\Git\cmd;D:\;C:\Users\joaov\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\joaov\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\joaov\AppData\Roaming\npm;C:\Users\joaov\AppData\Local\Yarn\bin;C:\Users\joaov\Downloads\Android\Sdk\platform-tools;C:\Users\joaov\Downloads\Android\Sdk\tools;D:\Docker Toolbox;C:\Users\joaov\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  13.11.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOTEMPTY: directory not empty, rmdir 'C:\Users\joaov\Desktop\code-tray\node_modules\electron\dist'
+
+npm manifest: 
+  {
+    "name": "code-tray",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/joaovieira23/electron-tray.git",
+    "author": "joaovieira23 <joaovictorvieira.23@hotmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
