@@ -2,8 +2,11 @@ const { resolve, basename } = require('path');
 const {
   app, Menu, Tray, dialog, MenuItem,
 } = require('electron');
-const Store = require('electron-store');
 const spawn = require('cross-spawn');
+const Store = require('electron-store');
+const Sentry = require('@sentry/electron');
+
+Sentry.init({ dsn: 'https://efb4f40958394270a31b9cfb1d0043cb@o357269.ingest.sentry.io/5238519' });
 
 const schema = {
   projects: {
