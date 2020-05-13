@@ -7,18 +7,28 @@
   "author": "joaovieira23 <joaovictorvieira.23@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "dependencies": {
     "@sentry/electron": "1.3.0",
     "cross-spawn": "^7.0.2",
-    "electron": "^8.2.5",
     "electron-store": "^5.1.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
+    "electron": "^8.2.5",
+    "electron-builder": "^22.6.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "prettier": "^2.0.5"
+  },
+  "build": {
+    "appId": "com.electron.codetray",
+    "win": {
+      "target": "nsis",
+      "icon": "build / icon.ico"
+    }
   }
 }
