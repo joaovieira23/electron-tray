@@ -3,6 +3,7 @@ const {
   app, Menu, Tray, dialog,
 } = require('electron');
 const spawn = require('cross-spawn');
+const child_process = require('child_process');
 const Store = require('electron-store');
 const Sentry = require('@sentry/electron');
 
@@ -35,6 +36,13 @@ function render() {
         label: 'Abrir no VSCode',
         click: () => {
           spawn('code', [path], { stdio: 'inherit' });
+        },
+      },
+      {
+        label: 'Abrir no Terminal',
+        click: () => {
+          console.log(path);
+          child_process.exec(`start cmd.exe /K cd /D ${path}`);
         },
       },
       {
